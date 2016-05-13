@@ -7,3 +7,7 @@
 //
 
 import Foundation
+protocol MissionDetailsViewControllerDelegate: class {
+    func missionDetailsViewController(controller: MissionDetailsViewController, didFinishAddingMission mission: String)
+    func missionDetailsViewController(controller: MissionDetailsViewController, didFinishEditingMission mission: Mission, atIndexPath indexPath: Int)
+}

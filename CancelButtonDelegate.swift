@@ -6,4 +6,7 @@
 //  Copyright © 2016 Howard Jiang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+protocol CancelButtonDelegate: class {
+    func cancelButtonPressedFrom(controller: UIViewController)
+}
